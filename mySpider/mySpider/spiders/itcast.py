@@ -4,6 +4,8 @@ import scrapy
 from mySpider.items import MyspiderItem
 
 
+# 爬取传智播客的老师信息
+
 class ItcastSpider(scrapy.Spider):
     name = 'itcast'
     allowed_domains = ['itcast.cn']
@@ -23,5 +25,6 @@ class ItcastSpider(scrapy.Spider):
             item['name'] = name[0]
             item['title'] = title[0]
             item['info'] = info[0]
-            items.append(item)
-        return items
+            # 返回提取到的每一个item数据，交给管道文件处理，同时回来继续执行后面的代码
+            yield item
+

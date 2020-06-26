@@ -10,7 +10,10 @@ import scrapy
 
 class MyspiderItem(scrapy.Item):
     # define the fields for your item here like:
+    # 老师姓名
     name = scrapy.Field()
+    # 老师职位
     title = scrapy.Field()
+    # 老师个人简介
     info = scrapy.Field()
     # pass
