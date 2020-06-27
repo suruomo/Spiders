@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for 西刺代理网站地址端口 project
+# Scrapy settings for xicidailiSpider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = '西刺代理网站地址端口'
+BOT_NAME = 'xicidailiSpider'
 
-SPIDER_MODULES = ['西刺代理网站地址端口.spiders']
-NEWSPIDER_MODULE = '西刺代理网站地址端口.spiders'
+SPIDER_MODULES = ['xicidailiSpider.spiders']
+NEWSPIDER_MODULE = 'xicidailiSpider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = '西刺代理网站地址端口 (+http://www.yourdomain.com)'
+#USER_AGENT = 'xicidailiSpider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False # robots协议
@@ -48,13 +48,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    '西刺代理网站地址端口.middlewares.XicidailispiderSpiderMiddleware': 543,
+#    'xicidailiSpider.middlewares.XicidailispiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    '西刺代理网站地址端口.middlewares.XicidailispiderDownloaderMiddleware': 543,
+#    'xicidailiSpider.middlewares.XicidailispiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -66,7 +66,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    '西刺代理网站地址端口.pipelines.XicidailispiderPipeline': 300,
+#    'xicidailiSpider.pipelines.XicidailispiderPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

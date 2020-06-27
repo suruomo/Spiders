@@ -19,10 +19,10 @@ class XicidailiSpider(scrapy.Spider):
 
 
         # 翻页操作
-        # next_page=response.xpath('//a[@class="next_page"]/@href').get()
-        # if next_page:
-        #     print(next_page)
-        #     # 拼接网址
-        #     next_url=response.urljoin(next_page)
-        #     # 发出请求
-        #     yield scrapy.Request(next_url,callback=self.parse)
+        next_page=response.xpath('//a[@class="next_page"]/@href').get()
+        if next_page:
+            print(next_page)
+            # 拼接网址
+            next_url=response.urljoin(next_page)
+            # 发出请求
+            yield scrapy.Request(next_url,callback=self.parse)
