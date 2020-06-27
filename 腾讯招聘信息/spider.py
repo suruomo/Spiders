@@ -29,7 +29,8 @@ for page in range(1, 11):
         detailInfo = c.find_element_by_xpath("./p[2]").text
         data.append({"name": name, "company": company, "workLocation": workLocation,
                      "classification": classification, "publishTime": publishTime, "detailInfo": detailInfo})
-
+# 关闭浏览器
+browser.close()
 # 字典转为json
 json_str = json.dumps(data, indent=4, ensure_ascii=False)
 # 写入文件

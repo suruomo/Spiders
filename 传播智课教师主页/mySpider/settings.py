@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for mySpider project
+# Scrapy settings for 传播智课教师主页 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'mySpider'
+BOT_NAME = '传播智课教师主页'
 
-SPIDER_MODULES = ['mySpider.spiders']
-NEWSPIDER_MODULE = 'mySpider.spiders'
+SPIDER_MODULES = ['传播智课教师主页.spiders']
+NEWSPIDER_MODULE = '传播智课教师主页.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'mySpider (+http://www.yourdomain.com)'
+#USER_AGENT = '传播智课教师主页 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -48,13 +48,13 @@ FEED_EXPORT_ENCODING = 'utf-8'
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'mySpider.middlewares.MyspiderSpiderMiddleware': 543,
+#    '传播智课教师主页.middlewares.MyspiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'mySpider.middlewares.MyspiderDownloaderMiddleware': 543,
+#    '传播智课教师主页.middlewares.MyspiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -66,7 +66,7 @@ FEED_EXPORT_ENCODING = 'utf-8'
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'mySpider.pipelines.MyspiderPipeline': 300,
+   '传播智课教师主页.pipelines.MyspiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
