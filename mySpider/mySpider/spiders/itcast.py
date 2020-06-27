@@ -14,7 +14,6 @@ class ItcastSpider(scrapy.Spider):
     def parse(self, response):
         node_list = response.xpath("//div[@class='li_txt']")
 
-        items = []
         for node in node_list:
             item = MyspiderItem()
 

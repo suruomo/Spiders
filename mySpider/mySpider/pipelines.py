@@ -8,7 +8,7 @@ import json
 
 class MyspiderPipeline(object):
     def __init__(self):
-        self.f = open("teacher.json", "wb+")
+        self.f = open("data/teacher.json", "wb+")
 
     def process_item(self, item, spider):
         content=json.dumps(dict(item),ensure_ascii=False)+",\n"
